@@ -1,8 +1,8 @@
 const HistoryGloria = {
     id: 8,
     personage: "gloria",
-    cover: 'bg-clothing-1',
-    title: 'history 2',
+    cover: 'bg-clothing',
+    title: 'history-2',
     desc: "Gloria ha logrado organizarse financieramente. Sus locales de ropa cada vez van mejor y ahora considera que podría solicitar un crédito con su banco. ¿Será una buena idea?",
     ptsMax: 12,
     answer: {

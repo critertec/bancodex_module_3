@@ -1,8 +1,8 @@
 const HistoryGloria = {
     id: 5,
     personage: "gloria",
-    cover: 'bg-clothing-1',
-    title: 'history 2',
+    cover: 'bg-clothing',
+    title: 'history-2',
     desc: "Gloria es una gran comerciante. Sabe dónde quedan las mejores fábricas de ropa, consigue muy buenos precios y acaba de montar su local en un sector concurrido. Los primeros meses fueron difíciles y sus ingresos apenas alcanzaban para pagar los gastos y la mercancía. Pero hace tres meses empezó a pagar todos los costos y le quedaban $ 500.000 COP de sobra cada mes. Durante esos meses no se daba cuenta y terminaba gastándoselos, pero después de haber estudiado en Mis Finanzas Lab, sabe que puede hacerlo mucho mejor y que esos excedentes pueden tener un mejor uso.",
     ptsMax: 12,
     answer: {

@@ -1,8 +1,8 @@
 const HistoryJose = {
     id: 4,
     personage: 'jose',
-    title: 'history 1',
-    cover: 'bg-production-uniform-1',
+    title: 'history-1',
+    cover: 'bg-production-uniform',
     desc: "Después de haber ganado la licitación con la que José creó su empresa, ha trabajado fuertemente y se ha posicionado en la ciudad por su calidad y servicio. Distribuye a algunos hospitales, colegios y fábricas del sector. “Uniformes Geniales S.A.S” ha tenido un crecimiento durante el último año y, por primera vez desde su constitución, ha dejado utilidades de $ 20.000.000 COP. Después de haber escuchado a Karem, José sabe que existen diferentes formas para aprovechar estos excedentes de forma responsable y está buscando consejos para hacerlo bien.",
     ptsMax: 12,
     answer: {

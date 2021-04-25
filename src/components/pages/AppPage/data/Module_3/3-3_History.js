@@ -1,8 +1,8 @@
 const HistoryJose = {
     id: 9,
     personage: 'jose',
-    title: 'history 3',
-    cover: 'bg-production-uniform-1',
+    title: 'history-3',
+    cover: 'bg-production-uniform',
     desc: "José quiere hacer crecer su fábrica de uniformes a otras ciudades del país. Con lo aprendido en el curso, ha logrado hacer un plan de negocio y sabe que para la primera fase de expansión requiere $ 200.000.000 COP, y que podrá recuperarlos en menos de 12 meses si todo sale bien. Es un alto riesgo y sabe que deberá trabajar mucho más para sacar el proyecto adelante. ¿Debería hacerlo? ",
     ptsMax: 11,
     answer: {
