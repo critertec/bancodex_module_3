@@ -1,5 +1,5 @@
 // Modules
-import data from './data/Module_2/index'
+import data from './data/Module_3/index'
 // import Module_2 from './data/Module_2'
 // import Module_3 from './data/Module_3'
 
