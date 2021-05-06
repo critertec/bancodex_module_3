@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 132.33 131.35" style="enable-background:new 0 0 132.33 131.35;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#XMLID_3_);}
+	.st1{opacity:0.25;clip-path:url(#SVGID_2_);}
+	.st2{fill:#F6D968;}
+	.st3{fill:#B98601;}
+	.st4{fill:#FFFFFF;}
+	.st5{clip-path:url(#XMLID_5_);}
+	.st6{opacity:0.25;clip-path:url(#SVGID_4_);}
+	.st7{clip-path:url(#XMLID_7_);}
+	.st8{opacity:0.25;clip-path:url(#SVGID_6_);}
+	.st9{opacity:0.25;clip-path:url(#XMLID_10_);}
+	.st10{opacity:0.25;clip-path:url(#XMLID_12_);}
+	.st11{opacity:0.25;clip-path:url(#XMLID_14_);}
+	.st12{fill:url(#SVGID_7_);}
+	.st13{fill:url(#SVGID_8_);}
+	.st14{fill:url(#SVGID_9_);}
+	.st15{fill:url(#SVGID_10_);}
+	.st16{opacity:0.7;fill:#60DFFF;}
+	.st17{fill:url(#SVGID_11_);}
+	.st18{fill:#D7F7FF;}
+	.st19{fill:url(#SVGID_12_);}
+	.st20{fill:url(#SVGID_13_);}
+	.st21{opacity:0.25;clip-path:url(#SVGID_15_);}
+	.st22{fill:#53CFFC;}
+	.st23{fill:#017BD2;}
+	.st24{fill:url(#SVGID_16_);}
+	.st25{opacity:0.25;}
+	.st26{clip-path:url(#SVGID_18_);}
+	.st27{fill:url(#SVGID_19_);}
+	.st28{opacity:0.25;clip-path:url(#SVGID_21_);}
+	.st29{fill:url(#SVGID_22_);}
+	.st30{clip-path:url(#SVGID_24_);}
+	.st31{fill:url(#SVGID_25_);}
+	.st32{opacity:0.25;clip-path:url(#SVGID_27_);}
+	.st33{fill:url(#SVGID_28_);}
+	.st34{clip-path:url(#SVGID_30_);}
+	.st35{fill:url(#SVGID_31_);}
+	.st36{opacity:0.25;clip-path:url(#SVGID_33_);}
+	.st37{fill:url(#SVGID_34_);}
+	.st38{clip-path:url(#SVGID_36_);}
+	.st39{fill:#60DFFF;}
+	.st40{fill:url(#SVGID_37_);}
+	.st41{opacity:0.25;clip-path:url(#SVGID_39_);}
+	.st42{fill:url(#SVGID_40_);}
+	.st43{opacity:0.25;clip-path:url(#SVGID_42_);}
+	.st44{fill:url(#SVGID_43_);}
+	.st45{fill:#1E3865;}
+</style>
+<g id="FONDOS">
+</g>
+<g id="PERSONAJES">
+</g>
+<g id="INTERFACE">
+	<g>
+		<g>
+			<path class="st4" d="M5.72,131.35h120.89c3.16,0,5.72-2.56,5.72-5.72V5.72c0-3.16-2.56-5.72-5.72-5.72L5.72,0
+				C2.56,0,0,2.56,0,5.72l0,119.91C0,128.79,2.56,131.35,5.72,131.35z"/>
+			
+				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-460.1739" y1="11435.4062" x2="-345.4623" y2="11435.4062" gradientTransform="matrix(-4.489700e-11 1 1 4.489700e-11 -11369.2432 469.0638)">
+				<stop  offset="0" style="stop-color:#60DFFF"/>
+				<stop  offset="1" style="stop-color:#0BAAFF"/>
+			</linearGradient>
+			<path style="fill:url(#SVGID_2_);" d="M124.51,117.39V15.03c0-3.39-2.75-6.14-6.14-6.14H13.96c-3.39,0-6.14,2.75-6.14,6.14
+				v102.36c0,3.43,2.78,6.22,6.22,6.22h104.25C121.72,123.6,124.51,120.82,124.51,117.39z"/>
+			<g>
+				<defs>
+					<path id="SVGID_41_" d="M124.51,117.39V15.03c0-3.39-2.75-6.14-6.14-6.14H13.96c-3.39,0-6.14,2.75-6.14,6.14v102.36
+						c0,3.43,2.78,6.22,6.22,6.22h104.25C121.72,123.6,124.51,120.82,124.51,117.39z"/>
+				</defs>
+				<clipPath id="SVGID_4_">
+					<use xlink:href="#SVGID_41_"  style="overflow:visible;"/>
+				</clipPath>
+				<g class="st6">
+					<polygon class="st22" points="96.04,18.77 124.58,35.05 124.58,50.45 106.26,40.56 106.26,59.39 96.04,66.01 85.82,59.39 
+						85.82,40.56 67.5,50.45 67.5,35.05 					"/>
+					<polygon class="st22" points="31.95,18.77 60.49,35.05 60.49,50.45 42.17,40.56 42.17,59.39 31.95,66.01 21.73,59.39 
+						21.73,40.56 3.41,50.45 3.41,35.05 					"/>
+				</g>
+				<g class="st6">
+					<polygon class="st22" points="128.08,56.85 156.62,73.13 156.62,88.53 138.31,78.65 138.31,97.48 128.08,104.1 117.86,97.48 
+						117.86,78.65 99.54,88.53 99.54,73.13 					"/>
+					<polygon class="st22" points="63.99,56.85 92.53,73.13 92.53,88.53 74.22,78.65 74.22,97.48 63.99,104.1 53.77,97.48 
+						53.77,78.65 35.45,88.53 35.45,73.13 					"/>
+					<polygon class="st22" points="-0.1,56.85 28.44,73.13 28.44,88.53 10.13,78.65 10.13,97.48 -0.1,104.1 -10.32,97.48 
+						-10.32,78.65 -28.64,88.53 -28.64,73.13 					"/>
+				</g>
+				<g class="st6">
+					<polygon class="st22" points="95.84,95.86 124.38,112.14 124.38,127.54 106.06,117.66 106.06,136.49 95.84,143.11 
+						85.62,136.49 85.62,117.66 67.3,127.54 67.3,112.14 					"/>
+					<polygon class="st22" points="31.35,95.86 59.89,112.14 59.89,127.54 41.57,117.66 41.57,136.49 31.35,143.11 21.13,136.49 
+						21.13,117.66 2.81,127.54 2.81,112.14 					"/>
+				</g>
+			</g>
+			<g>
+				<path class="st23" d="M33.66,65.34h21.39L52.2,52.43c-1.31-5.93,5.03-10.6,10.3-7.58l42.65,24.42c4.69,2.69,4.69,9.45,0,12.14
+					L62.5,105.83c-5.27,3.02-11.61-1.65-10.3-7.58l2.86-12.91H33.66c-5.52,0-10-4.48-10-10v0C23.66,69.82,28.14,65.34,33.66,65.34z"
+					/>
+			</g>
+			<path class="st4" d="M33.66,59.21h21.39L52.2,46.31c-1.31-5.93,5.03-10.6,10.3-7.58l42.65,24.42c4.69,2.69,4.69,9.45,0,12.14
+				L62.5,99.7c-5.27,3.02-11.61-1.65-10.3-7.58l2.86-12.91H33.66c-5.52,0-10-4.48-10-10v0C23.66,63.69,28.14,59.21,33.66,59.21z"/>
+		</g>
+	</g>
+</g>
+</svg>
