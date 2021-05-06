@@ -69,13 +69,14 @@
 }
 
 .dialogFeedBack-btn-next {
-    width: 35%;
-    max-width: 150px;
+    width: 18vw;
+    min-width: 150px;
 }
 
 .dialogFeedBack-text {
- font-weight: 600;
+ font-weight: 200;
  font-size: 1em;
+ font-family: 'AvenirNextLtProLight';
 }
 
 .dialogFeedBack-text-question {

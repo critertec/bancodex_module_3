@@ -16,8 +16,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: scroll;
-
 }
 
 .dialogDesc-boxText {
@@ -26,7 +24,10 @@
     /* font-weight: bold; */
     line-height: 1.2;
     color: white;
-    font-size: 1.5vw;
+    font-weight: 300;
+    font-size: calc(.7rem + 1vw);
+    font-family: 'AvenirNextLtProLight';
+    overflow: auto;
 }
 
 .dialogDesc-footer {
@@ -39,8 +40,8 @@
 }
 
 .dialogDesc-btn-next {
-    width: 40%;
-    /* height: 80%; */
+    width: 18vw;
+    min-width: 150px;
 }
 
 .dialogDesc-text {
@@ -50,9 +51,11 @@
 
 .dialogDesc-text-question {
     margin-top: 20px;
-    font-weight:900;
-    font-size: 1.2em;
     text-align: center;
+
+    font-size: calc(1rem + 1vw);
+    font-family: 'AvenirNextLtPro';
+
 }
 
 .dialogDesc-btns-container {
@@ -61,18 +64,20 @@
 
 .dialogDesc-btn-right{
     position: absolute;
-    top: 20px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
+    /* top: 20px; */
+    right: 0px;
+    width: 10vw;
+    min-width: 80px;
+    height: 50%;
 }
 
 .dialogDesc-btn-left{
     position: absolute;
-    top: 20px;
-    left: 10px;
-    width: 50px;
-    height: 50px;
+    /* top: 20px; */
+    left: 0px;
+    width: 10vw;
+    min-width: 80px;
+    height: 50%;
 }
 
 .container-panorama {
@@ -85,35 +90,39 @@
 
 .dialogDesc-list {
     width: 100%;
-    /* background-color: red; */
 }
 
 .title-table {
     text-align: center;
     margin: 10px;
-    font-size: 1.3rem;
+    font-size: calc(1rem + 1vw);
+    font-family: 'Calibri';
 }
 
 .container-table {
     height: 100%;
+    max-height: 45vh;
     padding-bottom: 20px;
 }
 
 .table {
     width: 100%;
-    /* border: 1px solid white; */
 }
 
 .table th {
     text-transform: capitalize;
     border: 1px solid white;
-    padding: 10px;
+    padding: 4px;
+    font-size: calc(.5rem + 1vw);
+    font-family: 'Calibri';
 }
 
 .table td {
     font-weight: normal;
     border: 1px solid white;
-    padding: 10px;
+    padding: 8px;
+    line-height: 1;
+    font-size: calc(.3rem + 1vw);
 }
 
 @media only screen and (max-width: 650px) {
@@ -156,11 +165,18 @@
         height: 50px;
     }
 
-    .dialogDesc-text {
-        font-size: 12px;
+    .dialogDesc-btn-left {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        width: 50px;
+        height: 50px;
     }
 
-    .dialogDesc-text-question {
-        font-size: 12px;
+    .dialogDesc-text {
+        font-weight: 300;
+        font-family: 'AvenirNextLtProLight';
     }
+
+   
 }

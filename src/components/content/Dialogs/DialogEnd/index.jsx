@@ -1,5 +1,4 @@
 import {  useEffect } from 'react'
-import classnames from 'classnames'
 import Button from '../../../../../content/button'
 import HeaderStars from '../../../../../content/HeaderStars/index'
 import "./DialogEnd.css"
@@ -48,7 +47,6 @@ const DialogEnd = ({
             <div className="dialogEnd-content-container">
                 <div className="dialogEnd-content">
                     <div className="dialogEnd-text-container">
-                        {/* <div className="dialogEnd-text-content"> */}
                         <div>
                             <TextDesc />
                         </div>

@@ -1,6 +1,6 @@
 .modalHome {
-    padding: 40px;
-    height: 300px;
+    padding: calc( 1rem + 1vw );
+    height: 70%;
     box-sizing: border-box;
 }
 
@@ -9,19 +9,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: calc( .8rem + 1vw);
     color: #223E67;
+    margin: calc( 1rem + 1vw );
+    font-family: 'AvenirNextLtProLight';
 }
 .modalHome-text {
-    width: 80%;
+    width: 90%;
 }
 
 .modalHome-btn-container {
     display: flex;
     justify-content: center;
-    height: 100px;
+    height: auto;
+    margin-top: 20px;
 }
 
 .modalHome-btn {
-    height: 60px;
+    width: 15vw;
+    min-width: 120px;
 }

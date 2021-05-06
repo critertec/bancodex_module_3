@@ -31,6 +31,8 @@
 
     font-weight: normal;
     font-size: .85em;
+    font-family: 'AvenirNextLtProLight';
+    padding-right: 15px;
     
     display: flex;
     justify-content: center;
@@ -40,6 +42,7 @@
 .option-text {
     width: 90%;
     padding-left: 10%;
+    padding-right: 5%;
 }
 
 .option-letter {

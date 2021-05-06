@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import "./DialogWelcome.css";
 import Button from '../../../content/button'
-import Personage from '../../../personages/personage'
+// import Personage from '../../../personages/personage'
 
 const DialogWelcome = ({
     texts,

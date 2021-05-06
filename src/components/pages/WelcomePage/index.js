@@ -1,4 +1,3 @@
-import classNames from 'classnames'
 import DialogWelcome from './DialogWelcome';
 import "./welcomePage.css"
 import Personage from '../../personages/personage'
@@ -15,6 +14,15 @@ export default (props) => {
                 </div>
                 <DialogWelcome {...props} />
             </div>
+                <div className="welcome-footer">
+                    <div className='welcome-footer-text'>
+                        Música por {' '} 
+                        <a href="https://www.bensound.com/"         styles={{ cursor: 'pointer'}}
+                        >
+                            Bensound.com
+                        </a> 
+                    </div>
+                </div>
         </div>
     )
 }

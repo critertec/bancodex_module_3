@@ -15,6 +15,7 @@
 
     display: flex;
     justify-content: space-around;
+    z-index: 10;
 }
 
 .menu-home-btn {

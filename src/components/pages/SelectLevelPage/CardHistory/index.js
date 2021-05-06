@@ -3,11 +3,6 @@ import classNames from 'classnames'
 
 import "./CardHistory.css"
 
-import header_start_0 from "../../../../assets/INTERFACE/HEADER_STAR_0.svg"
-import header_start_1 from "../../../../assets/INTERFACE/HEADER_STAR_1.svg"
-import header_start_2 from"../../../../assets/INTERFACE/HEADER_STAR_2.svg"
-import header_start_3 from"../../../../assets/INTERFACE/HEADER_STAR_3.svg"
-
 import icon_eye from '../../../../assets/INTERFACE/ICON_EYE.svg'
 import icon_eye_close from '../../../../assets/INTERFACE/ICON_EYE_CLOSE.svg'
 

@@ -1,4 +1,3 @@
-import classNames from 'classnames'
 import DialogEnd from './DialogEnd/index'
 import Personage from '../../../../personages/personage'
 import "./FeedBackEnd.css";
@@ -44,7 +43,7 @@ const SceneFeedBackEnd = ({
             <div className={currentStory.cover}>
                 <div className="feedBackEnd-title-container">
                     <div className="feedBackEnd-title-content">
-                        <div className="title-history-1"/>
+                        <div className={`title-module-${currentStory.id}`} />
                     </div>
                 </div>
                 <div className="feedBackEnd-content">  

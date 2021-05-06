@@ -1,5 +1,4 @@
 import {  useEffect } from 'react'
-import classnames from 'classnames'
 import Button from '../../../../../content/button'
 import HeaderStars from '../../../../../content/HeaderStars/index'
 import "./DialogEnd.css"
@@ -31,7 +30,7 @@ const DialogEnd = ({
         }
 
         return (
-            <div>
+            <>
                 { Array.isArray(desc) ? 
                         desc.map( (t, index) => (
                             <div 
@@ -54,7 +53,7 @@ const DialogEnd = ({
                         {question } 
                     </div>)
                 }
-            </div>
+            </>
         )
     }
 
@@ -73,23 +72,25 @@ const DialogEnd = ({
                 <div className="dialogEnd-content">
                     <div className="dialogEnd-text-container">
                         {/* <div className="dialogEnd-text-content"> */}
-                        <div>
+                        {/* <div> */}
                             <TextDesc />
-                        </div>
+                        {/* </div> */}
                     </div>
 
                     <div className="dialogEnd-footer">
-                        <div className="dialogEnd-btn-next">
-                            <Button 
-                                type="next"
-                                onClick={onCallNext}
-                            />
-                        </div>
-                        <div className="dialogEnd-btn-return">
-                            <Button 
-                                type="return"
-                                onClick={onCallReturn}
-                            />
+                        <div className="dialogEnd-footer-content">
+                            <div className="dialogEnd-btn-next">
+                                <Button 
+                                    type="next"
+                                    onClick={onCallNext}
+                                />
+                            </div>
+                            <div className="dialogEnd-btn-return">
+                                <Button 
+                                    type="return"
+                                    onClick={onCallReturn}
+                                />
+                            </div>
                         </div>
                     </div>
 

@@ -42,7 +42,8 @@
 
 .dialogHistory-text {
  font-weight: 600;
- font-size: 1.2vw;
+ font-size: 30px;
+ font-family: 'AvenirNextLtPro';
 }
 
 .dialogHistory-text-question {

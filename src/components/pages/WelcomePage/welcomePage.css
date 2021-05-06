@@ -14,8 +14,8 @@
 }
 
 .welcome-container-content {
+    position: relative;
     width: 90%;
-    /* max-width: 800px; */
     height: 100%;
 
     display: flex;
@@ -55,10 +55,26 @@
 
 }
 
+.welcome-footer {
+    position: absolute;
+    z-index: 1;
+    bottom: 5px;
+    right: 15px;
+
+    display: flex;
+    color: #eee;
+    font-family: "AvenirNextLtProLight";
+}
+.welcome-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
 @media only screen and (max-width: 1000px) {
     .welcome-dialog-text {
         margin-bottom: 10px;
-        font-size: 12px;
+        /* font-size: 12px; */
     }
     .welcome-dialog-container{
         margin-top: 50px;

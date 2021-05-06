@@ -42,8 +42,8 @@ const DialogDesc = ({
         return (
             <div className="dialogDesc-list">
                 <ul>
-                    { list.map( item => (
-                        <li>
+                    { list.map( (item, i) => (
+                        <li key={i}>
                             { item }
                         </li>
                     ))}
@@ -68,7 +68,7 @@ const DialogDesc = ({
                     <thead>
                         <tr>
                             { columns.map( column => (
-                                <th>
+                                <th key={column.label}>
                                     { column.label }
                                 </th>
                             )) }
@@ -107,9 +107,9 @@ const DialogDesc = ({
                     desc = {infoPage?.desc}
                 />   
 
-                {/* <ListDesc
+                <ListDesc
                     list = {infoPage?.list}
-                />   */}
+                />  
                 <Table 
                     data = {infoPage?.table}
                 />
@@ -126,9 +126,9 @@ const DialogDesc = ({
         )
     }
 
-    useEffect(()=> {
-        console.log('dialogDesc', currentQuestion)
-    }, [])
+    // useEffect(()=> {
+    //     console.log('dialogDesc', currentQuestion)
+    // }, [])
 
     return (
     <>
@@ -146,7 +146,6 @@ const DialogDesc = ({
                 <BoxText />
             </div>
             <div className="dialogDesc-footer">
-                <div className="dialogDesc-btn-next">
                     { (
                         page >= 0 
                         && page !== (currentQuestion?.pages.length -1)
@@ -163,13 +162,15 @@ const DialogDesc = ({
                         )
                     }
                     
-                    { page === (currentQuestion?.pages.length -1) &&
+                    <div className="dialogDesc-btn-next">
+                        { page === (currentQuestion?.pages.length -1) &&
 
-                        <Button 
-                            type="next"
-                            onClick={nextScene}
-                        />
-                    }
+                            <Button 
+                                type="next"
+                                onClick={nextScene}
+                            />
+                        }
+                    </div>          
 
                     { page > 0 &&
                         <div className="dialogDesc-btn-left">
@@ -182,7 +183,6 @@ const DialogDesc = ({
                         </div>
                     }
 
-                </div>
             </div>
         </div>
     </>

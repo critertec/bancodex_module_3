@@ -1,6 +1,5 @@
 .cardHistory-container {
     position: relative;
-    /* max-width: 25%; */
     width: 28vw;
     min-width: 300px;
     min-height: 300px;
@@ -13,7 +12,6 @@
 
 .cardHistory-stars {
     width: 100%;
-    /* height: 20%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,11 +34,8 @@
     top: -30px;
     height: 70%;
     width: 100%;
-    /* box-sizing: 100%; */
-
     display: flex;
     justify-content: center;
-    /* overflow: scroll; */
 }
 
 .cardHistory-content-bg {
@@ -73,33 +68,82 @@
 .cardHistory-content-text {
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 70%;
+    width: 80%;
+    padding: 10px;
     color: white;
-    font-size: 1.5vw;
-    text-align:justify;
-    overflow-y: scroll;
+    font-size: calc(.3rem + 1vw);
+    overflow-y: auto;
     overflow-x: hidden;
+    font-family: 'AvenirNextLtProLight';
     
 }
 
-.title-history-1 {
+/* Title Module 1 */
+
+.title-module-1-1 {
     width: 100%;
     height: 100%;
-    background-image: url('../../../../assets/INTERFACE/TITLE_HISTORY_1.svg');
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_1-1.svg');
     background-repeat: no-repeat;
 }
 
-.title-history-2 {
+.title-module-1-2 {
     width: 100%;
     height: 100%;
-    background-image: url('../../../../assets/INTERFACE/TITLE_HISTORY_2.svg');
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_1-2.svg');
     background-repeat: no-repeat;
 }
 
-.title-history-3 {
+.title-module-1-3 {
     width: 100%;
     height: 100%;
-    background-image: url('../../../../assets/INTERFACE/TITLE_HISTORY_3.svg');
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_1-3.svg');
+    background-repeat: no-repeat;
+}
+
+/* Title Module 2 */
+
+.title-module-2-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_2-1.svg');
+    background-repeat: no-repeat;
+}
+
+.title-module-2-2 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_2-2.svg');
+    background-repeat: no-repeat;
+}
+
+.title-module-2-3 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_2-3.svg');
+    background-repeat: no-repeat;
+}
+
+/* Title Module 3 */
+
+.title-module-3-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_3-1.svg');
+    background-repeat: no-repeat;
+}
+
+.title-module-3-2 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_3-2.svg');
+    background-repeat: no-repeat;
+}
+
+.title-module-3-3 {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/INTERFACE/TITLE_MODULE_3-3.svg');
     background-repeat: no-repeat;
 }
 

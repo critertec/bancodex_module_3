@@ -1,7 +1,7 @@
-import { useEffect} from 'react'
 import classnames from 'classnames'
 import "./DialogFeedBack.css"
 import Button from '../../button/index'
+import GIRL_MOBILE from '../../../../assets/PERSONAJES/GIRL_MOBILE.svg'
 
 const DiaglogFeedBack = ({
     side,
@@ -25,7 +25,7 @@ const DiaglogFeedBack = ({
                 })} />
                 <div className={classnames({
                     "dialogFeedBack-content": true,
-                    'success': currentOption?.type == 'buena',
+                    'success': currentOption?.type === 'buena',
                     'warning': currentOption?.type === 'neutral',
                     'danger': currentOption?.type === 'mala'
                 })}>
@@ -33,13 +33,24 @@ const DiaglogFeedBack = ({
 
                         <div className="avatar-mobile-container">
                             <div className="avatar-mobile">
-                                <Personage />
+                                <img src={GIRL_MOBILE} alt="" />
                             </div>
                         </div>
 
-                        <div className="dialogFeedBack-text">
-                            {currentOption.feedback}
-                        </div>
+                            { Array.isArray(currentOption?.feedback) ? 
+                                    currentOption.feedback.map( (t, index) => (
+                                        <div 
+                                            key={index}
+                                            className="dialogFeedBack-text"
+                                        >
+                                            { t }
+                                        </div> 
+                                    ))
+                                :
+                                <div className="dialogFeedBack-text">
+                                    { currentOption.feedback }
+                                </div>  
+                            }
                         {/* <div className="dialogFeedBack-text-question">
                             ?Lorem ipsum dolor sit amet consectetur adipisicing elit ?
                         </div> */}

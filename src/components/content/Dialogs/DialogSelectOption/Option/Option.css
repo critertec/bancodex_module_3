@@ -30,7 +30,10 @@
     min-height: 100%;
 
     font-weight: normal;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
+    font-family: 'AvenirNextLtProLight';
+    padding-right: 15px;
+    
     
     display: flex;
     justify-content: center;
@@ -40,6 +43,8 @@
 .option-text {
     width: 90%;
     padding-left: 10%;
+    padding-right: 5%;
+    font-size: calc(.5rem + 1vw);
 }
 
 .option-letter {

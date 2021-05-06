@@ -2,14 +2,14 @@ import { useState, useEffect } from 'react'
 import Layout from '../../layout/ContainerApp/index'
 import WelcomePage from '../WelcomePage'
 import SelectLevelPage from '../SelectLevelPage/'
-import GameSpeakPage from '../GamePage/Scenes/Speak/index'
-import GameOptionsPage from '../GamePage/Scenes/SelectOption/index'
-import GameFeedBackPage from '../GamePage/Scenes/FeedBack/index.jsx'
+// import GameSpeakPage from '../GamePage/Scenes/Speak/index'
+// import GameOptionsPage from '../GamePage/Scenes/SelectOption/index'
+// import GameFeedBackPage from '../GamePage/Scenes/FeedBack/index.jsx'
 import GameFeedBackEndPage from '../GamePage/Scenes/FeedBackEnd/index'
 
 import GameScene from '../../content/scene/index'
 
-import { instructions, stories } from './data'
+import { instructions, stories, titleModule } from './data'
 
 import useSound from 'use-sound';
 
@@ -17,18 +17,18 @@ import SoundBtn from '../../../assets/SOUNDS/ETC_Sfx_Swipe_01.mp3'
 import SoundPtsOk from '../../../assets/SOUNDS/ETC_Sfx_Correcto_01.mp3'
 import SoundPtsBad from '../../../assets/SOUNDS/ETC_Sfx_Incorrecto_01.mp3'
 import SoundPts from '../../../assets/SOUNDS/ETC_Sfx_Puntaje_01.mp3'
-import SoundGame from '../../../assets/SOUNDS/bensound-memories.mp3'
 
 import ModalHomeConfirm from '../../content/Modals/HomeConfirm/index'
 import ModalHelp from '../../content/Modals/Help/index'
+
 import "./App.css"
 
-function App() {
+function App({}) {
   const [state, setState] = useState({
     questionsAsked: 0,
     stories: []
   });
-  const [storiesData, setStoriesDate ] = useState([])
+
   const [scene, setScene ] = useState('welcome');
   const [currentStory, setCurrentStory] = useState({});
   const [currentQuestion, setCurrentQuestion] = useState({});
@@ -40,11 +40,18 @@ function App() {
   // Sonidos
   const [stateSound, setStateSound] = useState(true);
 
-  const [soundBtn] = useSound(SoundBtn)
-  const [soundPtsOk] = useSound(SoundPtsOk)
-  const [soundPtsBad] = useSound(SoundPtsBad)
-  const [soundPts] = useSound(SoundPts)
-  const [soundGame] = useSound(SoundGame)
+  const [soundBtn] = useSound(SoundBtn, {
+    volume: '0.15'
+  })
+  const [soundPtsOk] = useSound(SoundPtsOk, {
+      volume: '0.15'
+  })
+  const [soundPtsBad] = useSound(SoundPtsBad, {
+    volume: '0.15'
+  })
+  const [soundPts] = useSound(SoundPts, {
+    volume: '0.15'
+  })
 
   const sound = (type) => {
     if (!stateSound){
@@ -57,22 +64,19 @@ function App() {
         break;
       case "good":
         soundPtsOk();
-        break;
-      case "good":
-        soundPts();
-        break;
-      case 'bad':
+        // break;
+      case 'bad': 
         soundPtsBad();
         break;
-      case 'game':
-        soundGame();
-        break;
+      
+      default:
+        soundPts(); 
+      
     }
   }
 
   const nextScene = () => {
 
-    console.log('nextScene', {scene})
     sound('btn');
     switch(scene){
       case "welcome": {
@@ -88,7 +92,7 @@ function App() {
             withScene: null
           });
         }
-      };break;
+      };
     }
   }
 
@@ -106,7 +110,6 @@ function App() {
   }
 
   const selectStory = (history) => {
-    // console.log('selected', history)
     sound('btn');
 
     setCurrentStory(history);
@@ -128,13 +131,13 @@ function App() {
     // Esta funcion se ejecuta cuando no hay options
     let option = optionSelected || currentOption; 
 
-    console.log('newQuestion', {
+    // console.log('newQuestion', {
 
-      option,
-      currentQuestion,
-      currentOption,
-      scene
-    })
+    //   option,
+    //   currentQuestion,
+    //   currentOption,
+    //   scene
+    // })
 
     switch (!withScene ? scene: withScene) {
       case 'game-options': {
@@ -144,16 +147,13 @@ function App() {
           return;
         }
 
-        
         let newAnswer = option.answer;
 
         if (newAnswer?.end){
           setCurrentQuestion(newAnswer);
-          setScene('game-feedbackEnd');
-
+          endStory();
           return;
         }
-        console.log('gameOptions', newAnswer)
         
         setCurrentQuestion(newAnswer)
         setScene('game-speak')
@@ -161,8 +161,6 @@ function App() {
       }; break;
 
       case 'game-feedback': {
-        console.log('game-feedback', option)
-        // console.log('game-feed', currentOption)
         let newAnswer = option.answer; 
 
         if (newAnswer.options){
@@ -228,8 +226,8 @@ function App() {
   }
 
   const endStory = () => {
-    setScene('game-feedbackEnd');
-    setState({
+    let newScoreStory = calcScore();
+    let newState = {
       ...state, 
       questionsAsked: state.questionsAsked + 1,
       stories: state.stories.map(story => story.id !== currentStory.id ?
@@ -237,10 +235,14 @@ function App() {
         :
         {
           ...story,
-          score: calcScore()
-        }  
-        )
-      })
+          score: newScoreStory
+        })
+    }
+    setState(newState)
+    setCurrentPuntage(newScoreStory);
+    setScene('game-feedbackEnd');
+
+    console.log("Final Pts", newState)
   }
 
   const incrementQuestion = () => {
@@ -259,7 +261,6 @@ function App() {
     let answer = question || currentQuestion;
     
     if (!answer.options) return 'not Option, format';
-    // console.log('formatQuestion', answer)
 
     let newAnswer = {
       ...answer,
@@ -276,7 +277,6 @@ function App() {
     //   alert("No se encontro algun option")
     // }
 
-    console.log('newAnswer', newAnswer)
     incrementQuestion();
     setCurrentQuestion(newAnswer);
 
@@ -288,23 +288,21 @@ function App() {
   }
 
   const selectOption = ( { option } ) => {
-    console.log('selectOption', option)
     setCurrentOption(option);
 
     // Hacer operacione Puntaje
     switch(option.type){
-      case 'buena':
+      case 'buena': {
         sound('good');
         setCurrentPuntage(currentPuntage + 3);
-      break;
-      case 'neutral':
+      }; break;
+      case 'neutral': {
         sound('neutral');
         setCurrentPuntage(currentPuntage + 2);
-      break;
-      case 'mala':
+      }; break;
+      case 'mala': {
         sound('bad');
-        // setCurrentPuntage(currentPuntage + 2);
-      break;
+      }; break;
     }
     // Dar feedback
     if (!option.feedback){
@@ -317,11 +315,12 @@ function App() {
   }
 
   const goToScene = (scene) => {
-    soundBtn();
+    sound('btn');
     setScene(scene)
   }
 
   const onReturn = () => {
+    setCurrentPuntage(0)
     selectStory(currentStory)
   }
 
@@ -358,7 +357,6 @@ function App() {
 
             currentOption={currentOption}
             newQuestion={()=> {
-              console.log('gameScene newQuestion')
               // newQuestion
               newQuestion({
                 optionSelected: null,
@@ -383,11 +381,11 @@ function App() {
     }
   }
 
-  const init = () => {
-
+  const init = async() => {
+     
     // Almacenar Data
     console.log(stories)
-
+    
     setScene('welcome');
     setState({
       ...state,
@@ -395,9 +393,8 @@ function App() {
         ...story,
         score: 0
       }))
-
+      
     })
-    sound('game');
   }
 
   useEffect(()=>{
@@ -406,6 +403,7 @@ function App() {
 
   return (
     <Layout
+      titleModule={titleModule}
       state={state}
       currentStory={currentStory}
 
@@ -417,12 +415,14 @@ function App() {
       setStateSound={setStateSound}
 
       modalHome={()=>{
-        if (scene.startsWith('game')){
+        if (scene.startsWith('game') && scene !== 'game-feedbackEnd'){
           setModalHome(true)
+        }else {
+          setScene('selectLevel')
         }
       }}
 
-      modalHelp={()=>{
+      modalHelp={()=>{ 
         setModalHelp(true)
       }}
     >

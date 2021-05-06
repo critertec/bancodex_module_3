@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import classnames from 'classnames';
 
 import DialogDesc from '../Dialogs/DialogDesc/index'
@@ -124,7 +123,7 @@ const Scene = ({
                     "left": scene !== "game-speak-intro"
                 })}>
                     <div className="scene-title-content">
-                        <div className={`title-${currentStory.title}`}/>
+                        <div className={`title-module-${currentStory.id}`}/>
                     </div>
                 </div>
                 <div className={classnames({

@@ -5,6 +5,7 @@ import History_3 from './1-3_History'
 import instructions from './instructions'
 
 export default {
+    module: '1',
     stories: [
         History_1,
         History_2,

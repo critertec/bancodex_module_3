@@ -33,6 +33,15 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'AvenirNextLtPro';
+  overflow-x: hidden;
+}
+
+* ::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .center-abs {
@@ -140,5 +149,6 @@ body {
   
   .dialogFeedBack-text {
     font-size: 15px;
+    font-family: 'AvenirNextLtProLight';
   }
 }

@@ -1,13 +1,17 @@
 const HistoryDonAlfonso = {
-    id: 6,
+    id: "2-3",
     personage: 'don alfonso',
     cover: 'bg-mechanics',
-    title: 'history-3',
+    title: 'history 3',
     desc: "Don Alfonso tiene dos talleres en la ciudad. Le ha ido bien y cree que es el momento de hacer una expansión más grande. Ha tratado de pedir prestado pero no ha tenido buenos resultados y no tiene la plata para hacerlo por su cuenta. ¿Qué puede hacer?",
     answer: {
         pages: [
             {
-                desc: "Sumercé, buenas tardes. Otra vez yo. Después de toda su ayuda he logrado organizar mis talleres y ganar plata. Creo que es el momento de seguir creciendo: quisiera poner un mega taller en el centro de la ciudad en 8 meses.",
+                desc: [
+                        "Después de toda su ayuda he logrado organizar mis talleres y ganar plata.",
+                        "    ‎",
+                        "Creo que es el momento de seguir creciendo: quisiera poner un mega taller en el centro de la ciudad en 8 meses.",
+                ],
                 question: "¿Qué debería hacer?"
             }
         ],
@@ -23,8 +27,12 @@ const HistoryDonAlfonso = {
         {
             id: "1",
             type: "mala",
-            desc: "Todo con calma, Don Alfonso. Que le haya ido bien con los primeros talleres no significa que todo sea así de fácil. Hacer una inversión tan grande puede ser perjudicial. ¿No preferiría seguir como está, sin tanto estrés y disfrutar de sus utilidades?",
-            feedback: "El miedo es uno de los factores que no permiten alcanzar el potencial emprendedor. Antes de tomar decisiones de abrir o no un negocio es importante analizar los números con detenimiento y no tomar decisiones apresuradas.",
+            desc: "Todo con calma. Que le haya ido bien con los primeros talleres no significa que todo sea así de fácil. ¿No preferiría seguir como está, sin tanto estrés y disfrutar de sus utilidades?",
+            feedback: [
+                        "El miedo es uno de los factores que no permiten alcanzar el potencial emprendedor.",
+                        "    ‎",
+                        "Antes de tomar decisiones de abrir o no un negocio es importante analizar los números con detenimiento y no tomar decisiones apresuradas.",
+                    ],
             answer: {
                 pages: [
                     {
@@ -42,7 +50,13 @@ const HistoryDonAlfonso = {
                 id: "1.1",
                 type: "neutral",
                 desc: "Primero lo primero. Pague todos los gastos y costos de la empresa y los personales, y si le llega a sobrar algo de plata, guárdela en algún lugar seguro.",
-                feedback: "Si bien gastar menos de lo que gana es el hábito que debemos cuidar, el ahorro es más efectivo cuando es intencionado. Es mejor definir bien los presupuestos mensuales y destinar unos valores mínimos de ahorro, y no ahorrar solo lo que sobra",
+                feedback: [
+                            "¡Bien!",
+                            "    ‎",
+                            "Gastar menos de lo que gana es el hábito que debemos cuidar, el ahorro es más efectivo cuando es intencionado.",
+                            "    ‎",
+                            "Es mejor definir bien los presupuestos mensuales y destinar unos valores mínimos de ahorro, y no ahorrar solo lo que sobra",
+                        ],
                 answer: {
                     pages: [
                         {
@@ -56,12 +70,18 @@ const HistoryDonAlfonso = {
             {
                 id: "1.2",
                 type: "buena",
-                desc: "¡Está bien! Me alegra que ya esté organizado, don Alfonso. Para lograr los objetivos de crecimiento, como abrir este mega taller, es importante definir una meta clara de ahorro mensual basado en sus ingresos y costos. Defina muy bien los costos que son 100 % necesarios, luego defina una cuota de ahorro y haga todo lo posible por mantenerla.",
-                feedback: "Organizarse financieramente incluye ser capaz de definir los valores de ahorro antes de gastar el dinero en otras cosas. Muchas personas lo hacen al revés y primero gastan todo lo que pueden y si sobra algo lo ahorran.",
-                answer: {
+                desc: "Para poder abrir el mega taller es importante definir una meta clara de ahorro mensual basado en sus ingresos y en los costos que sean 100% necesarios para la operación.",
+                feedback: [
+                            "¡Muy bien!",
+                            "    ‎",
+                            "Organizarse financieramente incluye ser capaz de definir los valores de ahorro antes de gastar el dinero en otras cosas.",
+                            "    ‎",
+                            "Muchas personas lo hacen al revés y primero gastan todo lo que pueden y si sobra algo lo ahorran.",
+                        ],
+              answer: {
                     pages: [
                         {
-                            desc: "¡Claro! Siempre que me proponía ahorrar con lo que me sobraba del mes, nunca sobraba nada. Voy a empezar a separar el ahorro mensual de forma sagrado",
+                            desc: "¡Claro! Siempre que me proponía ahorrar con lo que me sobraba del mes, nunca sobraba nada. Voy a empezar a separar el ahorro mensual de forma sagrada",
                             question: "¿Dónde debería guardarlo?"
                         }
                     ],
@@ -100,29 +120,33 @@ const HistoryDonAlfonso = {
                             pages: [
                                 {
                                     desc: [
-                                        "Ahh si. Alguna vez escuché de esa opción. Es como una cuota obligatoria para ahorrar y así uno no se gasta la plata en bobadas, ¿no?",
-
-                                        "Si quisiera hacerla debo pedir un valor de cuota mensual. Si en promedio mis utilidades son de $ 1.500.000 COP, pero tengo meses malos que solo me dejan $ 500.000 COP y unos muy buenos que dejan $ 5.000.000 COP, ¿qué cuota debería pedir? "
-                                    ]
-                                }
+                                        "¡Ahh si!",
+                                        "    ‎",
+                                        "Alguna vez escuché de esa opción. Es como una cuota obligatoria para ahorrar y así uno no se gasta la plata en bobadas, ¿no?",
+                                        "    ‎",
+                                        "Se requiere una cuota de depósito mensual. Si en promedio mis utilidades son de $1.500.000, pero tengo meses malos que solo me dejan $500.000",
+                                    ],
+                                        question: "¿qué cuota debería definir?",
+                                },
                             ],
                             options: [
                                 { option: "A", id: "1.2.1.1.1" },
                                 { option: "B", id: "1.2.1.1.2" },
                                 { option: "C", id: "1.2.1.1.3" }
                             ]
-                        }
+                        }        
                     },
+
                         // 1.2.1.1.1
                             {
                                 id: "1.2.1.1.1",
                                 type: "neutral",
-                                desc: "Empiece lento. Así sean $ 50.000 COP mensuales. Así también tendrá la disponibilidad de usar los excedentes para otros proyectos o gustos. ",
+                                desc: "Empiece lento. Así sean $50.000 mensuales. Así también tendrá la disponibilidad de usar los excedentes para otros proyectos o gustos. ",
                                 feedback: "A menor tiempo, menor rentabilidad de los CDTs. Es importante sincronizar la meta de ahorro/inversión con los plazos de los instrumentos de ahorro para poder tomar la mejor decisión de disponibilidad y rentabilidad.",
                                 answer: {
                                     pages: [
                                         {
-                                            desc: "Pero con $ 50.000 COP mensuales nunca podré montar el taller. Creo que puedo ahorrar al menos $ 500.000 COP sin arriesgarme a no cumplir. Me iré con esa opción. "
+                                            desc: "Pero con $50.000 mensuales nunca podré montar el taller. Creo que puedo ahorrar al menos $500.000 sin arriesgarme a no cumplir. Me iré con esa opción. "
                                         },
                                         {
                                             desc: "Unos meses después: ¡Sumercé, cómo está! Gracias a sus consejos y a las buenas ventas de estos meses logré tener ahorrado lo suficiente para abrir el mega taller. Fui al banco a sacar mis ahorros y el gerente me insistió en que debería asegurar el nuevo taller para estar más tranquilo. Me ofreció un seguro de PYME básico que protege el taller en caso de incendio, explosión o inundación, sin embargo me dice que puedo ampliarlo.  ",
@@ -167,7 +191,7 @@ const HistoryDonAlfonso = {
                                                 }
                                             ],
                                             answer: {
-                                                feedback: "Después de unos meses hubo un incendio en el taller, que dañó una máquina que costaba más de $ 15.000.000 COP. Don Alfonso no volverá a caer en ese riesgo otra vez.",
+                                                feedback: "Después de unos meses hubo un incendio en el taller, que dañó una máquina que costaba más de $15.000.000. Don Alfonso no volverá a caer en ese riesgo otra vez.",
                                                 end: true
                                             }
                                         }
@@ -194,12 +218,12 @@ const HistoryDonAlfonso = {
                             {
                                 id: "1.2.1.1.2",
                                 type: "mala",
-                                desc: "Si quiere alcanzar rápido tu meta, debería al menos programar $ 1.500.000 COP, que es el promedio de tus excedentes. Así podremos construir rápidamente el mega taller.",
+                                desc: "Si quiere alcanzar rápido tu meta, debería al menos programar $1.500.000, que es el promedio de tus excedentes. Así podremos construir rápidamente el mega taller.",
                                 feedback: "No cumplir con las cuotas de ahorro programado puede traer penalizaciones. Antes de definir las cuotas revisa bien los históricos y no te comprometas con cuotas más altas a los mínimos que puedes planear.",
                                 answer: {
                                     pages: [
                                         {
-                                            desc: "Creo que fue una mala idea. Tuve un par de meses malos y no alcancé a cubrir la cuota. Creo que la bajaré a $ 500.000 COP."
+                                            desc: "Creo que fue una mala idea. Tuve un par de meses malos y no alcancé a cubrir la cuota. Creo que la bajaré a $500.000."
                                         },
                                         {
                                             desc: "Unos meses después: ¡Sumercé, cómo está! Gracias a sus consejos y a las buenas ventas de estos meses logré tener ahorrado lo suficiente para abrir el mega taller. Fui al banco a sacar mis ahorros y el gerente me insistió en que debería asegurar el nuevo taller para estar más tranquilo. Me ofreció un seguro de PYME básico que protege el taller en caso de incendio, explosión o inundación, sin embargo me dice que puedo ampliarlo. ",
@@ -217,11 +241,16 @@ const HistoryDonAlfonso = {
                             {
                                 id: "1.2.1.1.3",
                                 type: "buena",
-                                desc: "Creo que es prudente que programe los $ 500.000 COP mensuales que le sobran mínimo después de haber pagado todos los costos de operación. ",
+                                desc: "Creo que es prudente que programe los $500.000 mensuales que le sobran mínimo después de haber pagado todos los costos de operación. ",
+                                feedback: [
+                                            "¡Muy bien!",
+                                            "    ‎",
+                                            "Definir cuotas que puedes asegurar te permitirá mantener un buen historial financiero y alcanzar rápidamente tus metas."
+                                            ],
                                 answer: {
                                     pages: [
                                         {
-                                            desc: "Sí. $ 500.000 COP suena algo posible y que me ayudará a alcanzar la meta."
+                                            desc: "Sí. $500.000 suena algo posible y que me ayudará a alcanzar la meta."
                                         },
                                         {
                                             desc: "Unos meses después: ¡Sumercé, cómo está! Gracias a sus consejos y a las buenas ventas de estos meses logré tener ahorrado lo suficiente para abrir el mega taller. Fui al banco a sacar mis ahorros y el gerente me insistió en que debería asegurar el nuevo taller para estar más tranquilo. Me ofreció un seguro de PYME básico que protege el taller en caso de incendio, explosión o inundación, sin embargo me dice que puedo ampliarlo. ",
@@ -369,8 +398,14 @@ const HistoryDonAlfonso = {
         {
             id: "2",
             type: "buena",
-            desc: "¡Está bien! Me alegra que ya esté organizado, don Alfonso. Para lograr los objetivos de crecimiento, como abrir este mega taller, es importante definir una meta clara de ahorro mensual basado en sus ingresos y costos. Defina muy bien los costos que son 100 % necesarios, luego defina una cuota de ahorro y haga todo lo posible por mantenerla.",
-            feedback: "Organizarse financieramente incluye ser capaz de definir los valores de ahorro antes de gastar el dinero en otras cosas. Muchas personas lo hacen al revés y primero gastan todo lo que pueden y si sobra algo lo ahorran.",
+            desc: "Para poder abrir el mega taller es importante definir una meta clara de ahorro mensual basado en sus ingresos y en los costos que sean 100% necesarios para la operación.",
+            feedback: [
+                "¡Muy bien!",
+                "    ‎",
+                "Organizarse financieramente incluye ser capaz de definir los valores de ahorro antes de gastar el dinero en otras cosas.",
+                "    ‎",
+                "Muchas personas lo hacen al revés y primero gastan todo lo que pueden y si sobra algo lo ahorran.",
+            ],
             answer: {
                 pages: [
                     {
@@ -390,7 +425,11 @@ const HistoryDonAlfonso = {
             id: "3",
             type: "neutral",
             desc: "Primero lo primero. Pague todos los gastos y costos de la empresa y los personales, y si le llega a sobrar algo de plata, guárdela en algún lugar seguro. ",
-            feedback: "Si bien gastar menos de lo que gana es el hábito que debemos cuidar, el ahorro es más efectivo cuando es intencionado. Es mejor definir bien los presupuestos mensuales y destinar unos valores mínimos de ahorro, y no ahorrar solo lo que sobra",
+            feedback: [
+                        "Gastar menos de lo que gana es el hábito que debemos cuidar, el ahorro es más efectivo cuando es intencionado.",
+                        "    ‎",
+                        "Es mejor definir bien los presupuestos mensuales y destinar unos valores mínimos de ahorro, y no ahorrar solo lo que sobra",
+            ],
             answer: {
                 pages: [
                     {

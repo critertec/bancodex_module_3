@@ -1,14 +1,14 @@
 // Modules
 import data from './data/Module_3/index'
-// import Module_2 from './data/Module_2'
-// import Module_3 from './data/Module_3'
 
 const InfoModalHelp = [ 
-    "Recuerda explorar todas las historias a profundidad.",
-    "Nunca sabes que puedes aprender mientras ayudas a otros"
+    "Prueba tus conocimientos ayudando a otras personas a alcanzar sus sueños",
+    "Entre mejores consejos des, más estrellas recibirás.",
+    "Da clic en el ícono del ojo para ver la descripción de cada historia",
 ];
 
 const stories = data.stories;
 const instructions = data.instructions;
+const titleModule = data.module;
 
-export { instructions, stories, InfoModalHelp }
+export { instructions, stories, InfoModalHelp, titleModule }

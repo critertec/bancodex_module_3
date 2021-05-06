@@ -15,7 +15,7 @@ const GamePage = ({
             <div className="bg-mechanics-1">
                 <div className="game-title-container">
                     <div className="game-title-content">
-                        <div className="title-history-1"/>
+                        <div className="title-module-1-1" />
                     </div>
                 </div>
                 <div className="game-content">  

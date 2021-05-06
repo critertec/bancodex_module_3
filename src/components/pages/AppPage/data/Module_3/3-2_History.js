@@ -1,14 +1,18 @@
 const HistoryGloria = {
-    id: 8,
+    id: "3-2",
     personage: "gloria",
     cover: 'bg-clothing',
-    title: 'history-2',
+    title: 'history 2',
     desc: "Gloria ha logrado organizarse financieramente. Sus locales de ropa cada vez van mejor y ahora considera que podría solicitar un crédito con su banco. ¿Será una buena idea?",
     ptsMax: 12,
     answer: {
         pages: [
             {
-                desc: "Gloria por teléfono: ¡Hola! Tus consejos han sido maravillosos. Gracias a ti ahora estoy más organizada y tengo muy claros los números de mis locales. Creo que podría solicitar un crédito por primera vez.",
+                desc: [
+                    "¡Hola!",
+                    "    ‎",
+                    "Tus consejos han sido maravillosos. Gracias a ti ahora estoy más organizada y tengo muy claros los números de mis locales. Creo que podría solicitar un crédito por primera vez.",
+                ],
                 question: "¿Debería hacerlo?"
             }
         ],
@@ -23,47 +27,132 @@ const HistoryGloria = {
         {
             id: "1",
             type: "buena",
-            desc: "Si tienes alguna oportunidad para hacer crecer el negocio con esa inversión podrías considerarlo. Un crédito bien negociado te permitiría aumentar las ventas, pero recuerda que los planes de expansión no siempre salen como uno espera. Llama al banco y revisemos qué te ofrecen.",
+            personageAction: "ok",
+            desc: "Si puedes hacer crecer el negocio con esa inversión podrías considerarlo. Un crédito bien negociado te permitiría aumentar las ventas, pero recuerda que los planes de expansión no siempre salen como uno espera.",
+            feedback: [
+                        "¡Muy bien!",
+                        "    ‎",
+                        "Muchas veces se requiere dinero adicional para dar el siguiente salto en el negocio.",
+                        "    ‎",
+                        "Los créditos son una gran opción, siempre y cuando se respeten los planes de expansión."
+            ],
             answer: {
                 pages: [
                     {
                         desc: [
-                            "¡Qué emoción! Nunca me había sentido tan organizada y con tanta claridad al hablar con el banco. Les expliqué cómo estaba manejando el negocio, como habían incrementado mis ventas, como tenía organizado mi sistema de registro y cómo proyectaba mis gastos. Al parecer me fue bien. ",
-                            "Me preguntaron en qué invertiría el préstamo y les conté sobre el nuevo local que quiero abrir al norte de la ciudad. Van a revisar todos los papeles y me llaman. "
+                            "¡Qué emoción!",
+                            "    ‎",
+                            "Nunca me había sentido tan organizada y con tanta claridad al hablar con el banco. Les expliqué cómo estaba manejando el negocio, como habían incrementado mis ventas, como tenía organizado mi sistema de registro y cómo proyectaba mis gastos. Al parecer me fue bien. ",
+                            "    ‎",
+                            "Me preguntaron en qué invertiría el préstamo y les conté sobre el nuevo local que quiero abrir al norte de la ciudad."
                         ]
                     },
                     {
                         desc: [
-                            'Al banco le gustó el plan de crecimiento que les expuse y me están ofreciendo diferentes opciones de crédito. ¿Cuál debería escoger? ',
-                            'El plan que expuse, basado en los históricos y en lo aprendido en el curso, fue el siguiente: ',
-                            '- Alquiler, adecuación e inventario de un nuevo local por $ 60.000.000 COP',
-                            '- Ventas estimadas mensuales después del tercer mes: $ 20.000.000 COP',
-                            '- Costos totales: $ 15.000.000 COP'
-                        ]
-                    },
-                    {
-                        desc: [
-                            "Préstamo de $ 120.000.000 COP",
-                            '- Tasa 1,8 % mensual',
-                            '- Tiempo 24 meses'
-                        ]
-                    },
-                    {
-                        desc: [
-                            "Préstamo de $ 100.000.000 COP",
-                            '- Tasa 2,2 % mensual',
-                            '- Tiempo 24 meses',
-                            '- Tres meses de periodo de gracia '
-                        ]
-                    },
-                    {
-                        desc: [
-                            "Préstamo de $ 60.000.000",
-                            "- Tasa 2 %",
-                            "- Tiempo 24 meses",
-                            "- Tres meses de gracia"
-                        ]
-                    }
+                            "Al banco le gustó el plan de crecimiento que les expuse y me están ofreciendo diferentes opciones de crédito. ¿Cuál debería escoger?",
+                            "    ‎",
+                            "El plan que expuse, basado en los históricos y en lo aprendido en el curso, fue el siguiente:"
+                        ],
+                          list:[
+                            'Alquiler, adecuación e inventario de un nuevo local por $60.000.000',
+                            'Ventas estimadas mensuales después del tercer mes: $20.000.000',
+                            'Costos totales mensuales: $15.000.000'
+                        ],
+                     },
+                            {
+                                table: {
+                                    title: [
+                                            'Me ofrecieron las siguientes opciones:',
+                                            "    ‎",
+                                            ],
+        
+                                    columns: [
+                                        { key: 'description', label: 'descripción' },
+                                        { key: 'value', label: 'Opción 1' }
+                                    ],
+                                    values: [
+                                        {
+                                           description: 'Valor del crédito',
+                                           value: '$120.000.000'
+                                        },
+                                        {
+                                            description: 'Tasa de interés',
+                                            value: '1.8% M.V.'
+                                        },
+                                        {
+                                            description: 'Tiempo',
+                                            value: '24 meses'
+                                        },
+                                        {
+                                            description: 'Condiciones adicionales',
+                                            value: 'No hay condiciones adicionales'
+                                        }
+                                    ]
+                                },
+                            },
+                            {
+                                table: {
+                                    title: [
+                                            'Me ofrecieron las siguientes opciones:',
+                                            "    ‎",
+                                            ],
+        
+                                    columns: [
+                                        { key: 'description', label: 'descripción' },
+                                        { key: 'value', label: 'Opción 2' }
+                                    ],
+                                    values: [
+                                        {
+                                           description: 'Valor del crédito',
+                                           value: '$100.000.000'
+                                        },
+                                        {
+                                            description: 'Tasa de interés',
+                                            value: '2.2% M.V.'
+                                        },
+                                        {
+                                            description: 'Tiempo',
+                                            value: '24 meses'
+                                        },
+                                        {
+                                            description: 'Condiciones adicionales',
+                                            value: 'Tres meses de periodo de gracia'
+                                        }
+                                    ]
+                                },
+                            },
+
+                            {
+                                table: {
+                                    title: [
+                                            'Me ofrecieron las siguientes opciones:',
+                                            "    ‎",
+                                            ],
+        
+                                    columns: [
+                                        { key: 'description', label: 'descripción' },
+                                        { key: 'value', label: 'Opción 3' }
+                                    ],
+                                    values: [
+                                        {
+                                           description: 'Valor del crédito',
+                                           value: '$60.000.000'
+                                        },
+                                        {
+                                            description: 'Tasa de interés',
+                                            value: '2.0% M.V.'
+                                        },
+                                        {
+                                            description: 'Tiempo',
+                                            value: '24 meses'
+                                        },
+                                        {
+                                            description: 'Condiciones adicionales',
+                                            value: 'Tres meses de periodo de gracia'
+                                        }
+                                    ]
+                                },
+                            },
                 ],
                 options: [
                     { option: 'A', id: '1.1'},
@@ -76,16 +165,37 @@ const HistoryGloria = {
             {
                 id: '1.1',
                 type: "mala",
-                desc: 'Definitivamente es mejor que aseguremos los $ 120.000.000 COP. Tiene una tasa baja y podemos utilizar ese dinero si se presenta una oportunidad en el camino.',
+                desc: [
+                        "Definitivamente es mejor que aseguremos los $120.000.000.",
+                        "    ‎",
+                        "Tiene una tasa baja y podemos utilizar ese dinero si se presenta una oportunidad en el camino.",
+                    ],
+                feedback: [
+                            "Adquirir créditos sin un plan de como invertirlos responsablemente puede ser contraproducente.",
+                            "    ‎",
+                            "Recuerda definir bien porqué necesitas el dinero extra y sigue tu plan."
+                        ],
                 answer: {
+                    personageAction: "upset",
                     pages: [
                         {
-                            desc: "¿Estás seguro? Creo que endeudarme en el doble de lo que necesito es bastante. Creo que me iré con los $ 60.000.000 COP."
+                            desc: [
+                                "¿Estás seguro?",
+                                "    ‎",
+                                "Creo que endeudarme en el doble de lo que necesito es bastante.",
+                                "    ‎",
+                                "Creo que me iré con los $60.000.000."
+                            ],
                         },
                         {
                             desc: [
-                                'Unos meses después: ',
-                                "Todo iba muy bien, pero la huelga de productores de ropa me afectó más de lo pensado. Se agotó el inventario que tenía y mis proveedores se demoran un mes en volverme a enviar mercancía. Las ventas cayeron por completo y ahora no podré pagar la próxima cuota del préstamo."
+                                'Unos meses después...',
+                                "    ‎",
+                                "    ‎",
+                                "Todo iba muy bien, pero la huelga de productores de ropa me afectó más de lo pensado.",
+                                "Se agotó el inventario que tenía y mis proveedores se demoran un mes en volverme a enviar mercancía.",
+                                "    ‎",
+                                "Las ventas cayeron por completo y ahora no podré pagar la próxima cuota del préstamo."
                             ],
                             question: "¿Qué puedo hacer?"
                         }
@@ -101,20 +211,37 @@ const HistoryGloria = {
                 {
                     id: "1.1.1",
                     type: "neutral",
-                    desc: 'Gloria, no te preocupes. Si dices que en un mes todo se soluciona, puedes dejar de pagar esta cuota y te adelantas en la siguiente. Seguramente ni se dan cuenta.',
+                    desc: 'Si todo se solucionará pronto, puedes dejar de pagar esta cuota y te adelantas en la siguiente. Seguramente ni se dan cuenta.',
+                    feedback: [
+                                "Los negocios son variables y puede que haya periodos malos.",
+                                "    ‎",
+                                "Es importante siempre hablar de forma proactiva con las entidades financieras y exponer la situación para encontrar las mejores opciones que no afecten el historial crediticio."
+                    ],
                     answer: {
+                        personageAction: "upset",
                         pages: [
                             {
-                                desc: "Sí se dieron cuenta. Me llamó la gerente del banco a preguntarme si la huelga estaba afectando el negocio y le conté todo. Me dieron tres meses de gracia mientras los proveedores me vuelven a surtir mercancía. Me recordaron que, siempre que vea estas situaciones los llame inmediatamente, que no siempre podrán ellos llamarme a mí. Creo que debo confiar más en los bancos como aliados. "
-                            },
+                                desc: [
+                                    "Sí se dieron cuenta.",
+                                    "    ‎",
+                                    "Me llamó la gerente del banco a preguntarme si la huelga estaba afectando el negocio y le conté todo. Me dieron tres meses de gracia mientras los proveedores me vuelven a surtir mercancía.",
+                                    "    ‎",
+                                    "Creo que debo confiar más en los bancos como aliados."
+                                ],
+                                },
                             {
                                 desc: [
-                                    "3 meses después: ",
+                                    "3 meses después...",
+                                    "    ‎",
 
-                                    "Todo volvió a la normalidad. Los proveedores volvieron a surtirme y la nueva colección está increible. Se vendió todo muy rápido. Me tocó duplicar los pedidos. Con esta subida de ventas tengo muchos excedentes. ¿Cómo debería utilizarlos? "
-                                ]
-                            }
+                                    "Todo volvió a la normalidad. Los proveedores volvieron a surtirme y la nueva colección está increible.",
+                                    "Se vendió todo muy rápido. Me tocó duplicar los pedidos. Con esta subida de ventas tengo muchos excedentes.",
+                                 ],
+                                 question: "¿Cómo debería utilizarlos?"
+                                
+                            },
                         ],
+                    
                         options: [
                             { option: 'A', id: "1.1.1.1" },
                             { option: 'B', id: "1.1.1.2" },
@@ -126,17 +253,33 @@ const HistoryGloria = {
                 {
                     id: "1.1.2",
                     type: "buena",
-                    desc: 'Gloria, muchas veces las situaciones se nos salen de control y nunca las preveemos en los análisis y proyecciones. Mi recomendación es que hables con el banco y expliques la situación. Es un imprevisto momentáneo y puedes pedirles ayuda. Lo imporante es ser transparente y verlos como aliados. ',
+                    desc: 'A veces hay situaciones que no podíamos preveer. Habla con el banco y explica la situación. Es un imprevisto momentáneo y puedes pedirles ayuda. Lo imporante es ser transparente y verlos como aliados. ',
+                    feedback: [
+                        "¡Así es!",
+                        "    ‎",
+                        "Ver a los bancos como aliados te permitirá manejar las situaciones difíciles cuando se presenten",
+            ],
                     answer: {
+                        personageAction:"ok",
                         pages: [
                             {
-                                desc: "¡Fue un gran consejo! Cuando llamé al banco y les expliqué la situación, me ayudaron con tres meses de gracia mientras me vuelven a surtir la mercancía. Es muy importante tener a los bancos como aliados en estas situaciones. A ellos les sirve que le vaya bien a la empresa."
+                                desc: [
+                                        "¡Fue un gran consejo!",
+                                        "    ‎",
+                                        
+                                        "Cuando llamé al banco y les expliqué la situación, me ayudaron con tres meses de gracia mientras me vuelven a surtir la mercancía. Es muy importante tener a los bancos como aliados en estas situaciones.",
+                                        "    ‎",
+                                        "A ellos les sirve que le vaya bien a la empresa.",
+                                ],
+                                
                             },
                             {
                                 desc: [
-                                    "3 meses después: ",
+                                    "3 meses después... ",
+                                    "    ‎",
 
-                                    "Todo volvió a la normalidad. Los proveedores volvieron a surtirme y la nueva colección está increible. Se vendió todo muy rápido. Me tocó duplicar los pedidos. Con esta subida de ventas tengo muchos excedentes. ",
+                                    "Todo volvió a la normalidad. Los proveedores volvieron a surtirme y la nueva colección está increible.",
+                                    "Se vendió todo muy rápido. Me tocó duplicar los pedidos. Con esta subida de ventas tengo muchos excedentes. ",
                                 ],
                                 question: '¿Cómo debería utilizarlos?'
                             }
@@ -195,11 +338,22 @@ const HistoryGloria = {
                 {
                     id: "1.1.3",
                     type: "mala",
-                    desc: 'Gloria, tienes que buscar urgentemente alguien que te preste lo de la cuota. Si empiezas a quedar mal puedes poner en riesgo toda la empresa. Ni se te ocurra decirle al banco que hay problemas. ',
+                    desc: [
+                            "Busca urgentemente alguien que te preste lo de la cuota. Si empiezas a quedar mal puedes poner en riesgo toda la empresa.",
+                    ],
+                    feedback: [
+                                "Pagar créditos con otros créditos no se recomienda a menos que se haga como compra de cartera con condiciones mejores al crédito original, en tiempo o en tasa de interés según la necesidad puntual.",
+                    ],
                     answer: {
                         pages: [
                             {
-                                desc: "Conseguí el dinero prestado a una tasa muy alta. Logré pagar este mes, pero ahora debo pagar dos meses seguidos y no sé si la logre. Debí haber hablado con el banco como primera opción. "
+                                desc: [
+                                        "Conseguí el dinero prestado a una tasa muy alta.",
+                                        "    ‎",
+                                        "Logré pagar este mes, pero ahora debo pagar dos meses seguidos y no sé si la logre.",
+                                        "    ‎",
+                                        "Debí haber hablado con el banco como primera opción. "
+                                ],
                             }
                         ],
                         end: true
@@ -209,15 +363,21 @@ const HistoryGloria = {
             {
                 id: '1.2',
                 type: "neutral",
-                desc: 'Creo que esos $ 100.000.000 COP son suficientes, y ese periodo de gracia ayudaría para que la clientela crezca y se mantenga en el nuevo local. ',
+                desc: 'Creo que esos $100.000.000 son suficientes, y ese periodo de gracia ayudaría para que la clientela crezca y se mantenga en el nuevo local. ',
+                feedback: [
+                            "¡Ten cuidado!",
+                            "    ‎",
+                            "No es recomendable adquirir créditos más grandes de lo que tus planes de crecimiento requieran.",
+                        ],
                 answer: {
                     pages: [
                         {
-                            desc: "Creo que iniciaré con los $60.000.000 y, si necesito más, pido los otros $ 40.000.000 COP."
+                            desc: "Creo que iniciaré con los $60.000.000 y, si necesito más, pido los otros $40.000.000."
                         },
                         {
                             desc: [
-                                'Unos meses después: ',
+                                'Unos meses después...',
+                                "    ‎",
                                 "Todo iba muy bien, pero la huelga de productores de ropa me afectó más de lo pensado. Se agotó el inventario que tenía y mis proveedores se demoran un mes en volverme a enviar mercancía. Las ventas cayeron por completo y ahora no podré pagar la próxima cuota del préstamo."
                             ],
                             question: "¿Qué puedo hacer?"
@@ -234,16 +394,30 @@ const HistoryGloria = {
             {
                 id: '1.3',
                 type: "buena",
-                desc: 'Si tu plan es de $ 60.000.000 COP, deberíamos mantenerlo.',
+                desc: 'Si tu plan es de $60.000.000, deberíamos mantenerlo.',
+                feedback: [
+                            "¡Muy bien!",
+                            "    ‎",
+                            "Hacer un plan de crecimiento estructurado te dará la tranquilidad para saber cuánto pedir prestado sin excederte."
+
+                ],
                 answer: {
                     pages: [
                         {
-                            desc: "Tienes razón. Debería mantener el plan inicial y no endeudarme más de la cuenta."
+                            desc: [
+                                    "Tienes razón.",
+                                    "    ‎",
+                                    "Debería mantener el plan inicial y no endeudarme más de la cuenta."
+                            ],
                         },
                         {
                             desc: [
-                                'Unos meses después: ',
-                                "Todo iba muy bien, pero la huelga de productores de ropa me afectó más de lo pensado. Se agotó el inventario que tenía y mis proveedores se demoran un mes en volverme a enviar mercancía. Las ventas cayeron por completo y ahora no podré pagar la próxima cuota del préstamo."
+                                'Unos meses después...',
+                                "    ‎",
+                                "    ‎",
+                                "Todo iba muy bien, pero la huelga de productores de ropa me afectó más de lo pensado.",
+                                "    ‎",
+                                "Se agotó el inventario que tenía y mis proveedores se demoran un mes en volverme a enviar mercancía. Las ventas cayeron por completo y ahora no podré pagar la próxima cuota del préstamo."
                             ],
                             question: "¿Qué puedo hacer?"
                         }
@@ -258,48 +432,134 @@ const HistoryGloria = {
     // 2
         {
             id: "2",
-            type: "neutral",
-            desc: "Creo que es una gran oportunidad. Has trabajado muy duro en fortalecer el historial financiero de tu negocio y puedes sacarle provecho ahora. Me habías contado que querías hacerle una gran fiesta de quince a tu hija, ¿no? Con el historial del negocio podrías pedir un préstamo a una tasa muy baja y lo vas pagando con lo que genera el negocio. Podrás cumplirle el sueño a tu hija. Llama al banco y revisemos que te ofrecen.",
+            type: "mala",
+            desc: "Con el buen historial del negocio podrías pedir un préstamo a una tasa muy baja para tus gastos personales y lo vas pagando con lo que genera el negocio. Podrás hacerle una gran fiesta de 15 a tu hija.",
+            feedback: [
+                        "¡Mala idea!",
+                        "    ‎",
+                        "Pedir prestamos a nombre de la empresa para gastos personales puede acarrear problemas en el futuro.",
+                        "    ‎",
+                        "Si pides un préstamo, asegurate que sea para que tu negocio crezca."
+
+            ],
             answer: {
+                personageAction: "upset",
                 pages: [
                     {
                         desc: [
-                            "¡Qué emoción! Nunca me había sentido tan organizada y con tanta claridad al hablar con el banco. Les expliqué cómo estaba manejando el negocio, como habían incrementado mis ventas, como tenía organizado mi sistema de registro y cómo proyectaba mis gastos. Al parecer me fue bien. ",
-                            "Me preguntaron en qué invertiría el préstamo y les conté sobre el nuevo local que quiero abrir al norte de la ciudad. Van a revisar todos los papeles y me llaman. "
-                        ]
+                            "Si algo he aprendido es a no mezclar las finanzas personales y las del negocio. Utilizaría el crédito para crecer.",
+                            "    ‎",
+                            "Fui al banco y les expliqué cómo estaba manejando el negocio, como habían incrementado mis ventas, como tenía organizado mi sistema de registro y cómo proyectaba mis gastos. Al parecer me fue bien. ",
+                            "    ‎",
+                            "Me preguntaron en qué invertiría el préstamo y les conté sobre el nuevo local que quiero abrir al norte de la ciudad."
+                        ],
                     },
                     {
                         desc: [
-                            'Al banco le gustó el plan de crecimiento que les expuse y me están ofreciendo diferentes opciones de crédito. ¿Cuál debería escoger? ',
-                            'El plan que expuse, basado en los históricos y en lo aprendido en el curso, fue el siguiente: ',
-                            '- Alquiler, adecuación e inventario de un nuevo local por $ 60.000.000 COP',
-                            '- Ventas estimadas mensuales después del tercer mes: $ 20.000.000 COP',
-                            '- Costos totales: $ 15.000.000 COP'
-                        ]
-                    },
-                    {
-                        desc: [
-                            "Préstamo de $ 120.000.000 COP",
-                            '- Tasa 1,8 % mensual',
-                            '- Tiempo 24 meses'
-                        ]
-                    },
-                    {
-                        desc: [
-                            "Préstamo de $ 100.000.000 COP",
-                            '- Tasa 2,2 % mensual',
-                            '- Tiempo 24 meses',
-                            '- Tres meses de periodo de gracia '
-                        ]
-                    },
-                    {
-                        desc: [
-                            "Préstamo de $ 60.000.000",
-                            "- Tasa 2 %",
-                            "- Tiempo 24 meses",
-                            "- Tres meses de gracia"
-                        ]
-                    }
+                            "Al banco le gustó el plan de crecimiento que les expuse y me están ofreciendo diferentes opciones de crédito. ¿Cuál debería escoger?",
+                            "    ‎",
+                            "El plan que expuse, basado en los históricos y en lo aprendido en el curso, fue el siguiente:"
+                        ],
+                          list:[
+                            'Alquiler, adecuación e inventario de un nuevo local por $60.000.000',
+                            'Ventas estimadas mensuales después del tercer mes: $20.000.000',
+                            'Costos totales mensuales: $15.000.000'
+                        ],
+                     },
+                            {
+                                table: {
+                                    title: [
+                                            'Me ofrecieron las siguientes opciones:',
+                                            "    ‎",
+                                            ],
+        
+                                    columns: [
+                                        { key: 'description', label: 'descripción' },
+                                        { key: 'value', label: 'Opción 1' }
+                                    ],
+                                    values: [
+                                        {
+                                           description: 'Valor del crédito',
+                                           value: '$120.000.000'
+                                        },
+                                        {
+                                            description: 'Tasa de interés',
+                                            value: '1.8% M.V.'
+                                        },
+                                        {
+                                            description: 'Tiempo',
+                                            value: '24 meses'
+                                        },
+                                        {
+                                            description: 'Condiciones adicionales',
+                                            value: 'No hay condiciones adicionales'
+                                        }
+                                    ]
+                                },
+                            },
+                            {
+                                table: {
+                                    title: [
+                                            'Me ofrecieron las siguientes opciones:',
+                                            "    ‎",
+                                            ],
+        
+                                    columns: [
+                                        { key: 'description', label: 'descripción' },
+                                        { key: 'value', label: 'Opción 2' }
+                                    ],
+                                    values: [
+                                        {
+                                           description: 'Valor del crédito',
+                                           value: '$100.000.000'
+                                        },
+                                        {
+                                            description: 'Tasa de interés',
+                                            value: '2.2% M.V.'
+                                        },
+                                        {
+                                            description: 'Tiempo',
+                                            value: '24 meses'
+                                        },
+                                        {
+                                            description: 'Condiciones adicionales',
+                                            value: 'Tres meses de periodo de gracia'
+                                        }
+                                    ]
+                                },
+                            },
+
+                            {
+                                table: {
+                                    title: [
+                                            'Me ofrecieron las siguientes opciones:',
+                                            "    ‎",
+                                            ],
+        
+                                    columns: [
+                                        { key: 'description', label: 'descripción' },
+                                        { key: 'value', label: 'Opción 3' }
+                                    ],
+                                    values: [
+                                        {
+                                           description: 'Valor del crédito',
+                                           value: '$60.000.000'
+                                        },
+                                        {
+                                            description: 'Tasa de interés',
+                                            value: '2.0% M.V.'
+                                        },
+                                        {
+                                            description: 'Tiempo',
+                                            value: '24 meses'
+                                        },
+                                        {
+                                            description: 'Condiciones adicionales',
+                                            value: 'Tres meses de periodo de gracia'
+                                        }
+                                    ]
+                                },
+                            },
                 ],
                 options: [
                     { option: 'A', id: '1.1'},
@@ -313,14 +573,25 @@ const HistoryGloria = {
             id: "3",
             type: "mala",
             desc: "Nunca te metas en créditos. Sólo sirven para cobrarte intereses. Si la empresa está bien, ahorra y pagas de contado lo que necesites. No hay necesidad de pagar de más.",
+            feedback: "Si evitas los créditos y el apalancamiento que te ofrecen los bancos, tus sueños de crecimiento se pueden demorar más de la cuenta.",
             answer: {
                 pages: [
                     {
-                        desc: "Nunca te metas en créditos. Sólo sirven para cobrarte intereses. Si la empresa está bien, ahorra y pagas de contado lo que necesites. No hay necesidad de pagar de más. "
+                        desc: [
+                                "¡Tienes razón!",
+                                "    ‎",
+                                "Si así estoy bien, no debería arriesgarme con créditos nuevos."
+                        ],
+                                
                     },
                 ],
                 answer: {
-                    feedback: 'Tienes razón. Mejor sigo como voy. (Gloria perdió la oportunidad de apalancar su negocio y acelerar su crecimiento. Los créditos bien ejecutados son una gran opción para aprovechar oportunidades que se presenten para negociar mejores precios, hacer crecer los puntos de venta, traer maquinaria nueva y muchas más opciones que permitirían reducir costos o incrementar la demanda. ',
+                    personageAction: "upset",
+                    feedback: [
+                                "Gloria perdió la oportunidad de apalancar su negocio y acelerar su crecimiento.",
+                                "    ‎",
+                                "Los créditos bien ejecutados son una gran opción para aprovechar oportunidades que se presenten para negociar mejores precios, hacer crecer los puntos de venta, traer maquinaria nueva y muchas más opciones que permitirían reducir costos o incrementar la demanda.",
+                    ],
                     end: true
                 }
             }
